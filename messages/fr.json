@@ -1,0 +1,63 @@
+{
+    "Header": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "work": "Références"
+    },
+    "Homepage": {
+        "title": "Eloi Grychta",
+        "subtitle": "Développeur Web",
+        "description": "Je transforme vos concepts et les façonne avec soin pour créer des expériences numériques personnalisées et innovantes. Celles-ci sauront captiver votre audience et la fidéliser grâce à une approche unique.",
+        "subdescription": "N'hésites pas à me contacter si tu as un projet en tête."
+    },
+    "Aboutpage": {
+        "title": "À propos",
+        "description": "Je suis passionné par la création de solutions numériques innovantes. Actuellement, je travaille en étroite collaboration avec l'agence Bggd Design.",
+          "experience_1" :
+            {
+              "company": "BGGD Design",
+              "role": "Développeur Web / Collaborateur",
+              "description": "Conception, développement et déploiement de sites web pour des particuliers",
+              "startDate": "Mars 2022",
+              "endDate": "Aujourd'hui"
+            }
+    },
+    "Workpage": {
+        "title": "Work",
+          "project_1" :
+            {
+              "name": "Pharmony",
+              "description": "Un logiciel d'officine innovant et ultra performant.",
+              "liveLink": "https://pharmony.fr/",
+              "previewImage": "/pharmony.webp"
+            },
+            "project_2" :
+            {
+              "name": "BGGD Portfolio",
+              "description": "Portfolio de l'agence BGGD Design.",
+              "liveLink": "https://bggd.fr/",
+              "previewImage": "/bggd.webp"
+            },
+            "project_3" :
+            {
+              "name": "Ieko",
+              "description": "Technologie de programmation durable pour la finance.",
+              "liveLink": "https://ieko.io/",
+              "previewImage": "/ieko.webp"
+            },
+            "project_4" :
+            {
+              "name": "Tikitup",
+              "description": "Organisations d'évènements pour les erasmus dans différentes villes d'Espagne.",
+              "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
+              "previewImage": "/Tikitup.webp"
+            },
+            "project_5" :
+            {
+              "name": "Magellan Voyages",
+              "description": "Agence de tourisme française basée en Argentine.",
+              "liveLink": "https://www.magellan-voyages.com/",
+              "previewImage": "/magellan_main.webp"
+            }        
+    }      
+}
