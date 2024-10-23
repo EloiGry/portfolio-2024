@@ -9,7 +9,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   unstable_setRequestLocale(locale);
   const t = useTranslations('Homepage')
   return (
-    <Transition>
+    <div className='fade-in'>
       <div className='md:w-1/2'>
         <h1 className="text-2xl font-heading sm:text-4xl">{t('title')}</h1>
         <p className="mt-2 text-lg sm:text-xl">{t('subtitle')}</p>
@@ -25,6 +25,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       </div>
 
       <Links />
-    </Transition>
+    </div>
   )
 }

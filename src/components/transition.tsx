@@ -11,7 +11,7 @@ export default function Transition({
     const { width } = useWindowSize()
   return (
     <motion.div
-    className="font-base" initial={{width: 0}} animate={{width: '100%'}} exit={{x: width, transition: {duration: 0.3}}}
+    className="font-base fade-in" initial={{width: 0}} animate={{width: '100%'}} exit={{x: width, transition: {duration: 0.3}}}
     >
       {children}
     </motion.div>
