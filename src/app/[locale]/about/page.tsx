@@ -1,7 +1,15 @@
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
 import Experience from '@/components/sections/experience'
 import Skills from '@/components/sections/skills'
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'Aboutpage'});
+  return {
+    title: t('metadatatitle'),
+    description: t('metadatadescription')
+  }
+}
 
 
 export default function About({ params: { locale } }: { params: { locale: string } }) {

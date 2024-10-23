@@ -5,12 +5,16 @@
         "work": "Work"
     },
     "Homepage": {
+      "metadatatitle": "Home",
+      "metadatadescription": "Presentation page",
       "title": "Eloi Grychta",
       "subtitle": "Web Developer",
       "description": "I transform your concepts and carefully shape them to create personalized and innovative digital experiences. These experiences will captivate your audience and build their loyalty through a unique approach.",
       "subdescription": "Feel free to contact me if you have a project in mind."
     },
     "Aboutpage": {
+      "metadatatitle": "About",
+      "metadatadescription": "Description page",
       "title": "About",
       "description": "I am passionate about creating innovative digital solutions. Currently, I closely collaborate with Bggd Design agency.",
       "experience_1": {
@@ -22,6 +26,8 @@
       }
     },
     "Workpage": {
+      "metadatatitle": "Work",
+      "metadatadescription": "Presentation page of my different works",
       "title": "Work",
       "project_1": {
         "name": "Pharmony",

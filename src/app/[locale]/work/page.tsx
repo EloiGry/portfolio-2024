@@ -1,10 +1,18 @@
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { ScanEye } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Transition from "@/components/transition";
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'Workpage'});
+    return {
+      title: t('metadatatitle'),
+      description: t('metadatadescription')
+    }
+}
 
 
 export default function Work({ params: { locale } }: { params: { locale: string } }) {
@@ -34,7 +42,10 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                   quality={100} // Garde la qualité élevée
 
                 />
-                <div className='cursor-pointer absolute inset-0 bg-black/30 z-10 hover:bg-black/0 transition-opacity duration-300'> </div>
+                <Link href={t(`${key}.liveLink`)}
+                      target="_blank" 
+                      className='cursor-pointer absolute inset-0 bg-black/30 z-10 hover:bg-black/0 transition-opacity duration-300'> 
+                </Link>
               </AspectRatio>
 
               <div className="text-text mt-5 font-base flex justify-between items-end gap-4 ">

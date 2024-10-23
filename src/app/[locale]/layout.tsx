@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '../globals.css';
 import Nav from '@/components/nav';
@@ -19,9 +18,6 @@ type Props = {
   params: { locale: string };
 };
 
-export const metadata: Metadata = {
-  title: 'Eloi Grychta',
-};
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
