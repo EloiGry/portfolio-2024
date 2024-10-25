@@ -26,9 +26,9 @@
     }
   },
   "Workpage": {
-    "metadatatitle": "Trabajo",
+    "metadatatitle": "Projectos",
     "metadatadescription": "Página de presentación de mis diferentes trabajos",
-    "title": "Trabajo",
+    "title": "Projectos",
     "project_1": {
       "name": "Pharmony",
       "description": "Un software de farmacia innovador y de alto rendimiento",
@@ -58,6 +58,49 @@
       "description": "Agencia de turismo francesa basada en Argentina.",
       "liveLink": "https://www.magellan-voyages.com/",
       "previewImage": "/magellan_main.webp"
-    } 
+    },
+    "project_6" :
+    {
+      "name": "285 Kelvin",
+      "description": "Salón de vinos a ciegas para particulares y profesionales.",
+      "liveLink": "https://285kelvin.com/",
+      "previewImage": "/285Kelvin.webp"
+    },
+    "project_7" :
+    {
+      "name": "BitCapitals",
+      "description": "Desarrolla tu negocio con una red de pagos descentralizada en bitcoins.",
+      "liveLink": "https://bitcapitals.io/",
+      "previewImage": "/Bitcapitals.webp"
+    },
+    "project_8" :
+    {
+      "name": "TokenFit",
+      "description": "Startup dedicada al desarrollo de proyectos que utilizan tokens.",
+      "liveLink": "https://tokenfit.io/en/",
+      "previewImage": "/Tokenfit.webp"
+    },
+    "project_9" :
+    {
+      "name": "Teazit",
+      "description": "Agencia de producción audiovisual y de eventos para empresas.",
+      "liveLink": "https://teazit.com/",
+      "previewImage": "/Teazit.webp"
+    },
+    "project_10" :
+    {
+      "name": "Gem",
+      "description": "Centro de formación para tus formaciones alternas y formación continua.",
+      "liveLink": "https://www.gem-formation.com/",
+      "previewImage": "/Gem.webp"
+    },
+    "project_11" :
+    {
+      "name": "Portfolio 2023",
+      "description": "Mi portafolio 2023",
+      "liveLink": "https://new-portfolio-one-pi.vercel.app/",
+      "previewImage": "/Portfolio_2023.webp"
+    }
+
   }
 }

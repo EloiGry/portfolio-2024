@@ -18,10 +18,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function Work({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
     const t = useTranslations('Workpage');
-    const keys = ['project_1', 'project_2', 'project_3', 'project_4', 'project_5'] as const;
+    const keys = ['project_1', 'project_2', 'project_3', 'project_4', 'project_5', 'project_6', 'project_7', 'project_8', 'project_9', 'project_10', 'project_11'] as const;
   return (
     <Transition>
-      <h1 className="mb-8 text-2xl font-heading sm:text-4xl">Work</h1>
+      <h1 className="mb-8 text-2xl font-heading sm:text-4xl">{t('title')}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
         {keys.map((key, id) => {
           return (
@@ -50,11 +50,11 @@ export default function Work({ params: { locale } }: { params: { locale: string 
 
               <div className="text-text mt-5 font-base flex justify-between items-end gap-4 ">
                 <div className='max-w-[80%]'>
-                <h2 className="text-xl font-heading sm:text-2xl">
+                <h2 className="text-xl font-heading sm:text-2xl h-auto md:h-16 lg:h-auto">
                 {t(`${key}.name`)}
                 </h2>
 
-                <p className="mt-2 h-16 flex items-end">{t(`${key}.description`)}</p>
+                <p className="h-16 flex items-end mt-1">{t(`${key}.description`)}</p>
                 </div>
                   <Link
                    

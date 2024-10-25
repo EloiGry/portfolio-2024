@@ -58,6 +58,48 @@
         "description": "French tourism agency based in Argentina.",
         "liveLink": "https://www.magellan-voyages.com/",
         "previewImage": "/magellan_main.webp"
-      } 
+      },
+      "project_6" :
+      {
+        "name": "285 Kelvin",
+        "description": "Blind wine tasting salon for individuals and professionals.",
+        "liveLink": "https://285kelvin.com/",
+        "previewImage": "/285Kelvin.webp"
+      },
+      "project_7" :
+      {
+        "name": "BitCapitals",
+        "description": "Grow your business with a decentralized payment network in bitcoins.",
+        "liveLink": "https://bitcapitals.io/",
+        "previewImage": "/Bitcapitals.webp"
+      },
+      "project_8" :
+      {
+        "name": "TokenFit",
+        "description": "Startup dedicated to the development of projects using tokens.",
+        "liveLink": "https://tokenfit.io/en/",
+        "previewImage": "/Tokenfit.webp"
+      },
+      "project_9" :
+      {
+        "name": "Teazit",
+        "description": "Event production and audiovisual agency for companies.",
+        "liveLink": "https://teazit.com/",
+        "previewImage": "/Teazit.webp"
+      },
+      "project_10" :
+      {
+        "name": "Gem",
+        "description": "Training center for your alternating and continuing education courses.",
+        "liveLink": "https://www.gem-formation.com/",
+        "previewImage": "/Gem.webp"
+      },
+      "project_11" :
+      {
+        "name": "Portfolio 2023",
+        "description": "My 2023 portfolio",
+        "liveLink": "https://new-portfolio-one-pi.vercel.app/",
+        "previewImage": "/Portfolio_2023.webp"
+      }
     }  
 }
