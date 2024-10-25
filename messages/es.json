@@ -13,9 +13,9 @@
     "subdescription": "No dudes en contactarme si tienes un proyecto en mente."
   },
   "Aboutpage": {
-    "metadatatitle": "Acerca de",
+    "metadatatitle": "Sobre mí",
     "metadatadescription": "Página de descripción",
-    "title": "Acerca de",
+    "title": "Sobre mí",
     "description": "Me apasiona crear soluciones digitales innovadoras. Actualmente, colaboro estrechamente con la agencia Bggd Design.",
     "experience_1": {
       "company": "BGGD Design",
@@ -26,9 +26,9 @@
     }
   },
   "Workpage": {
-    "metadatatitle": "Projectos",
+    "metadatatitle": "Proyectos",
     "metadatadescription": "Página de presentación de mis diferentes trabajos.",
-    "title": "Projectos",
+    "title": "Proyectos",
     "project_1": {
       "name": "Pharmony",
       "description": "Un software de farmacia innovador y de alto rendimiento.",
