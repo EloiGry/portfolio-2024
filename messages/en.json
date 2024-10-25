@@ -27,29 +27,29 @@
     },
     "Workpage": {
       "metadatatitle": "Work",
-      "metadatadescription": "Presentation page of my different works",
+      "metadatadescription": "Presentation page of my different works.",
       "title": "Work",
       "project_1": {
         "name": "Pharmony",
-        "description": "An innovative and high-performance pharmacy software",
+        "description": "An innovative and high-performance pharmacy software.",
         "liveLink": "https://pharmony.fr/",
         "previewImage": "/pharmony.webp"
       },
       "project_2": {
         "name": "BGGD Portfolio",
-        "description": "Portfolio of BGGD Design agency",
+        "description": "Portfolio of BGGD Design agency.",
         "liveLink": "https://bggd.fr/",
         "previewImage": "/bggd.webp"
       },
       "project_3": {
         "name": "Ieko",
-        "description": "Sustainable programming technology for finance",
+        "description": "Sustainable programming technology for finance.",
         "liveLink": "https://ieko.io/",
         "previewImage": "/ieko.webp"
       },
       "project_4": {
         "name": "Tikitup",
-        "description": "Event organization for Erasmus students in different cities in Spain",
+        "description": "Event organization for Erasmus students in different cities in Spain.",
         "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
         "previewImage": "/Tikitup.webp"
       },
@@ -97,7 +97,7 @@
       "project_11" :
       {
         "name": "Portfolio 2023",
-        "description": "My 2023 portfolio",
+        "description": "My 2023 portfolio.",
         "liveLink": "https://new-portfolio-one-pi.vercel.app/",
         "previewImage": "/Portfolio_2023.webp"
       }

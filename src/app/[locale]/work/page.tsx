@@ -60,7 +60,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                    
                     href={t(`${key}.liveLink`)}
                     target="_blank"
-                     className="h-fit border-border dark:border-darkBorder dark:bg-secondaryBlack dark:text-darkText shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-bg px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
+                     className="h-fit border-border dark:border-darkBorder dark:bg-darkBg dark:text-darkText shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-bg px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
                   >
                      <ScanEye /> 
                   </Link>

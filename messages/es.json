@@ -6,7 +6,7 @@
     },
     "Homepage": {
     "metadatatitle": "Inicio",
-    "metadatadescription": "Página de presentación",
+    "metadatadescription": "Página de presentación.",
     "title": "Eloi Grychta",
     "subtitle": "Desarrollador Web",
     "description": "Transformo sus conceptos y los elaboro con cuidado para crear experiencias digitales personalizadas e innovadoras. Estas experiencias cautivarán a su audiencia y la mantendrán fiel gracias a un enfoque único.",
@@ -20,36 +20,36 @@
     "experience_1": {
       "company": "BGGD Design",
       "role": "Desarrollador Web / Colaborador",
-      "description": "Diseño, desarrollo y despliegue de sitios web para particulares",
+      "description": "Diseño, desarrollo y despliegue de sitios web para particulares.",
       "startDate": "Marzo 2022",
       "endDate": "Hoy"
     }
   },
   "Workpage": {
     "metadatatitle": "Projectos",
-    "metadatadescription": "Página de presentación de mis diferentes trabajos",
+    "metadatadescription": "Página de presentación de mis diferentes trabajos.",
     "title": "Projectos",
     "project_1": {
       "name": "Pharmony",
-      "description": "Un software de farmacia innovador y de alto rendimiento",
+      "description": "Un software de farmacia innovador y de alto rendimiento.",
       "liveLink": "https://pharmony.fr/",
       "previewImage": "/pharmony.webp"
     },
     "project_2": {
       "name": "BGGD Portfolio",
-      "description": "Portafolio de la agencia BGGD Design",
+      "description": "Portafolio de la agencia BGGD Design.",
       "liveLink": "https://bggd.fr/",
       "previewImage": "/bggd.webp"
     },
     "project_3": {
       "name": "Ieko",
-      "description": "Tecnología de programación sostenible para las finanzas",
+      "description": "Tecnología de programación sostenible para las finanzas.",
       "liveLink": "https://ieko.io/",
       "previewImage": "/ieko.webp"
     },
     "project_4": {
       "name": "Tikitup",
-      "description": "Organización de eventos para Erasmus en diferentes ciudades de España",
+      "description": "Organización de eventos para Erasmus en diferentes ciudades de España.",
       "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
       "previewImage": "/Tikitup.webp"
     },
@@ -97,7 +97,7 @@
     "project_11" :
     {
       "name": "Portfolio 2023",
-      "description": "Mi portafolio 2023",
+      "description": "Mi portafolio 2023.",
       "liveLink": "https://new-portfolio-one-pi.vercel.app/",
       "previewImage": "/Portfolio_2023.webp"
     }
