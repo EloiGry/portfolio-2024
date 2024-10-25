@@ -73,7 +73,7 @@ export default function Nav() {
         {links.map((link, index) => {
           return (
             <Link
-              prefetch={false}
+              prefetch={true}
               key={link.path}
               className={clsx(
                 'relative rounded-base transition-colors pl-2 pr-1.5 py-1'

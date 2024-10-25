@@ -1,6 +1,7 @@
 import Links from '@/components/links'
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale,  getTranslations } from "next-intl/server";
+import Image from 'next/image';
 
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -17,7 +18,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   unstable_setRequestLocale(locale);
   const t = useTranslations('Homepage')
   return (
-    <div className='fade-in'>
+    <div className='fade-in flex items-center'>
       <div className='md:w-1/2'>
         <h1 className="text-2xl font-heading sm:text-4xl">{t('title')}</h1>
         <p className="mt-2 text-lg sm:text-xl">{t('subtitle')}</p>
@@ -30,9 +31,13 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           {t('subdescription')}
           </p>
         </div>
+        <Links />
+      </div>
+      <div className='hidden md:flex md:w-1/2 justify-center'>
+        <Image src='/main_portfolio.svg' alt="main image" width={300} height={300}/>
       </div>
 
-      <Links />
+      
     </div>
   )
 }

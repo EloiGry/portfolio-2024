@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Loader from '@/components/ui/loader';
@@ -12,11 +11,21 @@ const ClientWrapper = ({ children }: Props) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    // Vérifier si le contenu est déjà chargé
+    const handleLoad = () => {
       setLoading(false);
-    }, 1000); // Simuler un délai
+    };
 
-    return () => clearTimeout(timer);
+    // L'événement load peut ne pas se déclencher sur les navigations internes
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   return (
