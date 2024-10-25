@@ -15,6 +15,7 @@ import {
   SiWordpress,
   SiElementor,
   SiPrisma,
+  SiTypescript
 } from '@icons-pack/react-simple-icons'
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
@@ -25,6 +26,7 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'html', icon: SiHtml5 },
         { skill: 'css', icon: SiCss3 },
         { skill: 'javascript', icon: SiJavascript },
+        { skill: 'typescript', icon: SiTypescript},
         { skill: 'react', icon: SiReact },
         { skill: 'nextjs', icon: SiNextdotjs },
         { skill: 'tailwind', icon: SiTailwindcss },
