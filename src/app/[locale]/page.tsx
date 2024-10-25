@@ -18,7 +18,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   unstable_setRequestLocale(locale);
   const t = useTranslations('Homepage')
   return (
-    <div className='fade-in flex items-center'>
+    <div className='fade-in flex items-center my-auto min-h-full'>
       <div className='md:w-1/2'>
         <h1 className="text-2xl font-heading sm:text-4xl">{t('title')}</h1>
         <p className="mt-2 text-lg sm:text-xl">{t('subtitle')}</p>
