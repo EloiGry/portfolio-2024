@@ -22,7 +22,7 @@ export default function Skills() {
             <div className="mb-10 flex flex-wrap gap-5">
               {item.skills.map((skill, id) => {
                 return (
-                  <TooltipProvider key={id}>
+                  <TooltipProvider key={id} delayDuration={30}>
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <skill.icon className="h-8 w-8" title="" />

@@ -10,7 +10,7 @@
         "title": "Eloi Grychta",
         "subtitle": "Développeur Web",
         "description": "Je transforme vos concepts et les façonne avec soin pour créer des expériences numériques personnalisées et innovantes. Celles-ci sauront captiver votre audience et la fidéliser grâce à une approche unique.",
-        "subdescription": "N'hésites pas à me contacter si tu as un projet en tête."
+        "subdescription": "N'hésitez pas à me contacter si tu as un projet en tête."
     },
     "Aboutpage": {
         "metadatatitle" : "À propos",
@@ -30,6 +30,7 @@
         "metadatatitle" : "Références",
         "metadatadescription" : "Page de présentation de mes différents travaux.",
         "title": "Références",
+        "link": "Voir le site",
           "project_1" :
             {
               "name": "Pharmony",
@@ -54,7 +55,7 @@
             "project_4" :
             {
               "name": "Tikitup",
-              "description": "Organisations d'évènements pour les erasmus dans différentes villes d'Espagne.",
+              "description": "Organisations d'évènements dans différentes villes d'Espagne.",
               "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
               "previewImage": "/Tikitup.webp"
             },
@@ -89,14 +90,14 @@
             "project_9" :
             {
               "name": "Teazit",
-              "description": "Agence de production événementielle et audiovisuelle pour les entreprises.",
+              "description": "Agence de production événementielle et audiovisuelle.",
               "liveLink": "https://teazit.com/",
               "previewImage": "/Teazit.webp"
             },
             "project_10" :
             {
               "name": "Gem",
-              "description": "Centre de formation pour vos formations en alternance et formation continue.",
+              "description": "Centre de formation pour alternance et formation continue.",
               "liveLink": "https://www.gem-formation.com/",
               "previewImage": "/Gem.webp"
             },

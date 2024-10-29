@@ -18,17 +18,18 @@ const config: Config = {
     },
     extend: {
       colors: {
-        main: '#B3A99C',
+        main: '#f9f9f9',
         mainAccent: '#D6CFCF', // not needed for shadcn components
         overlay: 'rgba(0,0,0,0.8)',
 
         // light mode
-        bg: '#D6CFCF',
+        bg: '#e9e7e4',
         text: '#000',
         border: '#000',
 
         // dark mode
-        darkBg: '#272933',
+        darkMain: '#8c8a88',
+        darkBg: '#2d2c2b',
         darkText: '#eeefe9',
         darkBorder: '#000',
         secondaryBlack: '#212121', // opposite of plain white, not used pitch black because borders and box-shadows are that color

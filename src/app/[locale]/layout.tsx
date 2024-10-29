@@ -10,7 +10,7 @@ import ClientWrapper from '@/components/client-wrapper'; // Nouveau wrapper
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  // weight: ['400', '700'],
 });
 
 type Props = {

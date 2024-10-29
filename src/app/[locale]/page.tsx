@@ -34,7 +34,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         <Links />
       </div>
       <div className='hidden md:flex md:w-1/2 justify-center'>
-        <Image src='/main_portfolio.svg' alt="main image" width={300} height={300}/>
+        <Image src='/main.svg' alt="main image" width={400} height={400}/>
       </div>
 
       
