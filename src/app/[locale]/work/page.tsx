@@ -79,7 +79,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                               height={500}
                               quality={100} // Garde la qualité élevée
                             />
-                            <Link href={t(`${key}.liveLink`)} target="_blank" className="fixed z-50 bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"> <span>{t('link')}</span> <ExternalLink className="w-5 h-5"/> </Link>
+                            <Link href={t(`${key}.liveLink`)} aria-label='Open website in a new window' target="_blank" className="fixed z-50 bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"> <span>{t('link')}</span> <ExternalLink className="w-5 h-5"/> </Link>
                             </>
                           </CarouselItem>
                         )
@@ -101,7 +101,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                 <p className="h-16 flex items-end mt-1">{t(`${key}.description`)}</p>
                 </div>
                   <Link
-                   
+                    aria-label='Open website in a new window'
                     href={t(`${key}.liveLink`)}
                     target="_blank"
                      className="h-fit border-border dark:border-darkBorder dark:bg-darkBg dark:text-darkText shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-bg px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"

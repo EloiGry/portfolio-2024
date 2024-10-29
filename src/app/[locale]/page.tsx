@@ -36,8 +36,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <div className='hidden md:flex md:w-1/2 justify-center'>
         <Image src='/main.svg' alt="main image" width={400} height={400}/>
       </div>
-
-      
     </div>
   )
 }
