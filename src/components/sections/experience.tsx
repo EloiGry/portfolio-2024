@@ -7,7 +7,7 @@ export default function Experience({ locale }: { locale: string }) {
   const keys = ['experience_1'] as const;
   return (
     <div className="mb-16">
-      <h2 className="mb-8 text-xl font-heading sm:text-2xl">Experience</h2>
+      <h2 className="mb-8 text-xl font-heading sm:text-2xl">{t('xptitle')}</h2>
       {keys.map((key, id) => {
         return (
           <div className="mb-8" key={id}>
