@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import useWindowSize from "@/lib/useWindowSize";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export default function Transition({
   children,

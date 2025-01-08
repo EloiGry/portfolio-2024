@@ -4,9 +4,8 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { ThemeSwitcher } from './theme-switcher';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import LocaleSwitcher from './locale-switcher';
 import { useLocale, useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 
@@ -96,54 +95,8 @@ export default function Nav() {
           }}
         />
         <ThemeSwitcher />
-        <DropdownMenu>
-          <DropdownMenuTrigger className="m500:h-4 m500:w-4 h-6 w-6">{getFlagByLocale(locale)}</DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('es')}>
-              <img src='/spain.svg' className="m500:h-4 m500:w-4 h-6 w-6" alt='spain' />
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('en')}>
-              <img src='/united-states.svg' className="m500:h-4 m500:w-4 h-6 w-6" alt='united-state'/>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('fr')}>
-              <img src='/franceflag.svg' className="m500:h-4 m500:w-4 h-6 w-6" alt='france'/>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <LocaleSwitcher locale={locale} path={path} />
       </nav>
-      {/* <div className='fixed bottom-0 right-0 p-5'>
-        <DropdownMenu>
-          <DropdownMenuTrigger>{getFlagByLocale(locale)}</DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('es')}>
-              <img src='/spain.svg' alt='spain' />
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('en')}>
-              <img src='/united-states.svg' alt='united-state'/>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className='flex justify-center' onClick={() => changeLocale('fr')}>
-              <img src='/franceflag.svg' alt='france'/>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div> */}
     </div>
   );
-}
-
-function getFlagByLocale(locale: string) {
-  switch (locale) {
-    case 'es':
-      return <img src='/spain.svg' alt='Spain flag' />;
-    case 'en':
-      return <img src='/united-states.svg' alt='US flag' />;
-    case 'fr':
-      return <img src='/franceflag.svg' alt='France flag' />;
-    default:
-      return <img src='' alt='Default' />;
-  }
 }
