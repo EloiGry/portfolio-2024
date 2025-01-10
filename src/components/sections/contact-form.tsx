@@ -74,7 +74,7 @@ export function ContactForm({ formData }: ContactFormProps) {
         <form onSubmit={handleSubmit(submit)} className='flex flex-col gap-2'>
           <div className="block">
             <Label htmlFor="name">{formData.name}</Label>
-            <Input {...register('name')} id="name" placeholder={formData.name}  className='bg-main dark:bg-main'/>
+            <Input {...register('name')} type='text' id="name" placeholder={formData.name} className='bg-main dark:bg-main'/>
             {errors.name && <p className="text-red-500">{errors.name.message}</p>}
           </div>
           <div className="block">
@@ -84,7 +84,7 @@ export function ContactForm({ formData }: ContactFormProps) {
           </div>
           <div className="block">
             <Label htmlFor="object">{formData.object}</Label>
-            <Input {...register('object')} id="object" placeholder={formData.object} className='bg-main dark:bg-main' />
+            <Input {...register('object')} type='text' id="object" placeholder={formData.object} className='bg-main dark:bg-main' />
             {errors.object && <p className="text-red-500">{errors.object.message}</p>}
           </div>
           <div className="block">
@@ -92,6 +92,7 @@ export function ContactForm({ formData }: ContactFormProps) {
             <Textarea {...register('message')} id="message" rows={8} placeholder={formData.object} className='bg-main dark:bg-main'/>
           </div>
           {errors.message && <p className="text-red-500">{errors.message.message}</p>}
+          <Input type='text' name="_gotcha" className='hidden'/>
           {errors.root && (
             <div className="block">
               <p className="text-red-500">{formData.global_error}</p>
