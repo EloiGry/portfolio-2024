@@ -72,12 +72,12 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                                   height={500}
                                   quality={100}
                                 />
-                                <div className='absolute z-50 bottom-0 flex justify-between w-[97%]'>
+                                <div className='absolute z-50 bottom-0 flex justify-between w-[95%] md:w-[97%]'>
                                 <Link
                                   href={t(`${key}.liveLink`)}
                                   aria-label="Open website in a new window"
                                   target="_blank"
-                                  className="underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                  className="text-sm md:text-base underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
                                 >
                                   <span>{t('link')}</span>
                                   <ExternalLink className="w-5 h-5" />
@@ -85,7 +85,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                                 <Link
                                   href={`/${locale}/work/` + t(`${key}.slug`)}
                                   aria-label="Open details projects"
-                                  className="bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                  className="text-sm md:text-base bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
                                 >
                                   <span>{t('details')}</span>
                                   <ExternalLink className="w-5 h-5" />
