@@ -68,7 +68,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                 />
                 <Dialog>
                   <DialogTrigger className="cursor-pointer absolute inset-0 w-full h-full border-none bg-transparent hover:bg-white/20" />
-                  <DialogContent className="sm:max-w-[710px] bg-transparent border-none mx-auto">
+                  <DialogContent className="sm:max-w-[710px] bg-transparent border-none mx-auto" showCloseButton={false}>
                     <Carousel startIndex={id} className="mx-8">
                       <CarouselContent className="overflow-visible">
                         {keys.map((key, index) => {

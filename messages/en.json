@@ -12,6 +12,21 @@
       "description": "I transform your concepts and carefully shape them to create personalized and innovative digital experiences. These experiences will captivate your audience and build their loyalty through a unique approach.",
       "subdescription": "Feel free to contact me if you have a project in mind."
     },
+    "Contact": {
+      "title": "Contact Me",
+      "description": "Have an idea or a project? Send me a message, I’ll be happy to respond!",
+      "name": "Your name",
+      "email": "Your email address",
+      "object": "Subject of your message",
+      "message": "Your message",
+      "errors_name": "Please enter a valid name.",
+      "errors_email": "Please enter a valid email address.",
+      "errors_object": "Please enter a subject.",
+      "errors_message": "Please write a message.",
+      "global_error": "An error occurred. Please try again later.",
+      "submit": "Send",
+      "success_message": "Your message has been sent successfully!"
+    },
     "Aboutpage": {
       "metadatatitle": "About",
       "metadatadescription": "Description page",

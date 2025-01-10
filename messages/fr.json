@@ -12,6 +12,21 @@
         "description": "Je transforme vos concepts et les façonne avec soin pour créer des expériences numériques personnalisées et innovantes. Celles-ci sauront captiver votre audience et la fidéliser grâce à une approche unique.",
         "subdescription": "N'hésitez pas à me contacter si vous avez un projet en tête."
     },
+    "Contact": {
+          "title": "Contactez-moi",
+          "description": "Une idée ou un projet ? Envoyez-moi un message, je serai ravi de vous répondre !",
+          "name": "Votre nom",
+          "email": "Votre adresse e-mail",
+          "object": "Sujet de votre message",
+          "message": "Votre message",
+          "errors_name": "Veuillez entrer un nom valide.",
+          "errors_email": "Veuillez entrer une adresse e-mail valide.",
+          "errors_object": "Veuillez entrer un objet.",
+          "errors_message": "Veuillez écrire un message.",
+          "global_error": "Une erreur est survenue. Veuillez réessayer plus tard.",
+          "submit": "Envoyer",
+          "success_message": "Votre message a été envoyé avec succès !"
+        },
     "Aboutpage": {
         "metadatatitle" : "À propos",
         "metadatadescription" : "Page de description",
