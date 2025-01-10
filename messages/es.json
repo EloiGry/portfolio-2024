@@ -12,6 +12,21 @@
     "description": "Transformo sus conceptos y los elaboro con cuidado para crear experiencias digitales personalizadas e innovadoras. Estas experiencias cautivarán a su audiencia y la mantendrán fiel gracias a un enfoque único.",
     "subdescription": "No dudes en contactarme si tienes un proyecto en mente."
   },
+  "Contact": {
+      "title": "Contáctame",
+      "description": "¿Tienes una idea o un proyecto? ¡Envíame un mensaje, estaré encantado de responderte!",
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "object": "Asunto de tu mensaje",
+      "message": "Tu mensaje",
+      "errors_name": "Por favor, introduce un nombre válido.",
+      "errors_email": "Por favor, introduce una dirección de correo válida.",
+      "errors_object": "Por favor, introduce un asunto.",
+      "errors_message": "Por favor, escribe un mensaje.",
+      "global_error": "Ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
+      "submit": "Enviar",
+      "success_message": "¡Tu mensaje ha sido enviado con éxito!"
+    },
   "Aboutpage": {
     "metadatatitle": "Sobre mí",
     "metadatadescription": "Página de descripción",
