@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import Transition from '@/components/transition';
+import { keys } from '@/lib/constants';
+
 import {
   Dialog,
   DialogContent,
@@ -30,19 +32,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function Work({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations('Workpage');
-  const keys = [
-    'project_1',
-    'project_2',
-    'project_3',
-    'project_4',
-    'project_5',
-    'project_6',
-    'project_7',
-    'project_8',
-    'project_9',
-    'project_10',
-    'project_11',
-  ] as const;
 
   return (
     <Transition>
@@ -83,15 +72,25 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                                   height={500}
                                   quality={100}
                                 />
+                                <div className='absolute z-50 bottom-0 flex justify-between w-[97%]'>
                                 <Link
                                   href={t(`${key}.liveLink`)}
                                   aria-label="Open website in a new window"
                                   target="_blank"
-                                  className="fixed z-50 bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                  className="underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
                                 >
                                   <span>{t('link')}</span>
                                   <ExternalLink className="w-5 h-5" />
                                 </Link>
+                                <Link
+                                  href={`/${locale}/work/` + t(`${key}.slug`)}
+                                  aria-label="Open details projects"
+                                  className="bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                >
+                                  <span>{t('details')}</span>
+                                  <ExternalLink className="w-5 h-5" />
+                                </Link>
+                                </div>
                               </>
                             </CarouselItem>
                           );

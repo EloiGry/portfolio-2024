@@ -46,78 +46,117 @@
     "metadatadescription": "Página de presentación de mis diferentes trabajos.",
     "title": "Proyectos",
     "link": "Ir al sitio",
+    "details": "Ver los detalles",
+  "otherWorks": "Ver otros proyectos",
     "project_1": {
       "name": "Pharmony",
       "description": "Un software de farmacia innovador y de alto rendimiento.",
       "liveLink": "https://pharmony.fr/",
-      "previewImage": "/pharmony.webp"
+      "previewImage": "/pharmony.webp",
+      "slug": "pharmony",
+      "tags": ["Rediseño de sitio web", "Plataforma multilingüe", "WordPress", "Custom Post Type", "JavaScript", "SEO"],
+      "long_description": "Para apoyar la expansión de Pharmony (software de gestión para farmacias) en Francia y los Países Bajos, desarrollamos una red de sitios web multilingües. Después de rediseñar el sitio original de Bélgica, creamos nuevos sitios nacionales con contenido específico para cada país, cumpliendo con las regulaciones propias de cada uno.",
+      "galery": ["/pharmo_assets/pharmony_1.webp", "/pharmo_assets/pharmony_2.webp", "/pharmo_assets/pharmony_3.webp", "/pharmo_assets/pharmony_4.webp"]
     },
     "project_2": {
       "name": "BGGD Portfolio",
       "description": "Portafolio de la agencia BGGD Design.",
       "liveLink": "https://bggd.fr/",
-      "previewImage": "/bggd.webp"
+      "previewImage": "/bggd.webp",
+      "slug": "bggd-portfolio",
+      "tags": ["Modificación de sitio web", "WordPress", "SEO"],
+      "long_description": "Una agencia de comunicación global que realza la identidad de tu proyecto. Somos una agencia de comunicación digital global especializada en la creación de identidades de marca y crecimiento digital. Desarrollamos juntos la estrategia que hará realidad tu proyecto, adaptándonos a tus necesidades y presupuesto.",
+      "galery": ["/bggd_assets/bggd1.webp", "/bggd_assets/bggd2.webp"]
     },
     "project_3": {
       "name": "Ieko",
       "description": "Tecnología de programación sostenible para las finanzas.",
       "liveLink": "https://ieko.io/",
-      "previewImage": "/ieko.webp"
+      "previewImage": "/ieko.webp",
+      "slug": "ieko",
+      "tags": ["Creación de sitio web", "Plataforma multilingüe", "WordPress", "SEO"],
+      "long_description": "Ieko escucha y comprende tus necesidades, hablando fluidamente el lenguaje de las finanzas y la tecnología. Ella propone soluciones y sabe equilibrar urgencia y calidad gracias a su experiencia. Los proyectos se planifican en detalle, sin dejar nada al azar. Se realizan a tiempo y con calidad premium. ¡Este es su compromiso!",
+      "galery": ["/ieko_assets/ieko_1.webp", "/ieko_assets/ieko_2.webp", "/ieko_assets/ieko_3.webp", "/ieko_assets/ieko_4.webp", "/ieko_assets/ieko_5.webp"]
     },
     "project_4": {
       "name": "Tikitup",
       "description": "Organización de eventos para Erasmus en diferentes ciudades de España.",
       "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
-      "previewImage": "/Tikitup.webp"
+      "previewImage": "/Tikitup.webp",
+      "slug": "tikitup",
+      "tags": ["Modificación de sitio web", "React", "Next.js", "Typescript", "Bootstrap", "REST API"],
+      "long_description": "En Tikitup, verás eventos exclusivos de todo tipo, ¡mantente alerta para no perderte nada! Daremos visibilidad a grandes ideas derivadas de eventos únicos.",
+      "galery": ["/tikitup_assets/tikitup_1.webp", "/tikitup_assets/tikitup_2.webp", "/tikitup_assets/tikitup_3.webp", "/tikitup_assets/tikitup_4.webp"]
     },
     "project_5": {
       "name": "Magellan Voyages",
       "description": "Agencia de turismo francesa basada en Argentina.",
       "liveLink": "https://www.magellan-voyages.com/",
-      "previewImage": "/magellan_main.webp"
+      "previewImage": "/magellan_main.webp",
+      "slug": "magellan-voyages",
+      "tags": ["Creación de sitio web", "React", "Next.js", "Typescript", "TailwindCSS", "REST API", "Strapi", "SEO"],
+      "long_description": "En Magellan Voyage, la empresa se enorgullece de ser tu especialista en viajes auténticos en Argentina. Su equipo dedicado y apasionado crea experiencias únicas, ofreciéndote una inmersión profunda en los tesoros ocultos de este hermoso país de América del Sur. Durante años, han puesto su experiencia local y amor por esta tierra diversa al servicio de los viajeros en busca de aventuras personalizadas, descubrimientos culturales y momentos inolvidables.",
+      "galery": ["/magellan_assets/mag1.webp", "/magellan_assets/mag2.webp", "/magellan_assets/mag3.webp", "/magellan_assets/mag4.webp"]
     },
-    "project_6" :
-    {
+    "project_6": {
       "name": "285 Kelvin",
       "description": "Salón de vinos a ciegas para particulares y profesionales.",
       "liveLink": "https://285kelvin.com/",
-      "previewImage": "/285Kelvin.webp"
+      "previewImage": "/285Kelvin.webp",
+      "slug": "285-kelvin",
+      "tags": ["Creación de sitio web", "Plataforma multilingüe", "WordPress", "JavaScript", "REST API", "SEO"],
+      "long_description": "285Kelvin reinventa la experiencia del salón organizando catas de vino a ciegas, ofreciendo una plataforma directa y eficiente para los viticultores. Sus eventos se organizan en lugares seleccionados de toda Francia, y pronto a nivel internacional.",
+      "galery": ["/kelvin_assets/kelvin_1.webp", "/kelvin_assets/kelvin_2.webp", "/kelvin_assets/kelvin_3.webp", "/kelvin_assets/kelvin_4.webp", "/kelvin_assets/kelvin_5.webp", "/kelvin_assets/kelvin_6.webp"]
     },
-    "project_7" :
-    {
+    "project_7": {
       "name": "BitCapitals",
       "description": "Desarrolla tu negocio con una red de pagos descentralizada en bitcoins.",
       "liveLink": "https://bitcapitals.io/",
-      "previewImage": "/Bitcapitals.webp"
+      "previewImage": "/Bitcapitals.webp",
+      "slug": "bitcapitals",
+      "tags": ["Creación de sitio web", "Plataforma multilingüe", "WordPress", "JavaScript", "REST API", "SEO"],
+      "long_description": "BitCapitals es un equipo de expertos con más de 10 años de experiencia en soluciones financieras criptográficas, con el objetivo de proporcionar a empresas, comercios e instituciones las herramientas necesarias para impulsar su desarrollo y alcanzar nuevos clientes.",
+      "galery": ["/bitCapitals_assets/bitcapital_1.webp", "/bitCapitals_assets/bitcapital_2.webp"]
     },
-    "project_8" :
-    {
+    "project_8": {
       "name": "TokenFit",
       "description": "Startup dedicada al desarrollo de proyectos que utilizan tokens.",
       "liveLink": "https://tokenfit.io/en/",
-      "previewImage": "/Tokenfit.webp"
+      "previewImage": "/Tokenfit.webp",
+      "slug": "tokenfit",
+      "tags": ["Creación de sitio web", "Plataforma multilingüe", "WordPress"],
+      "long_description": "Constituida por especialistas en tecnología financiera y economía, ayudan a sus clientes en el desarrollo de plataformas de tokenización inclusivas. Creamos una identidad visual original para ellos y desarrollamos su sitio web, así como dos plataformas de tokenización (Tokenizer Online Free y Blockchain for Real Estate).",
+      "galery": ["/token_assets/tokenfit_1.webp", "/token_assets/tokenfit_2.webp", "/token_assets/tokenfit_3.webp", "/token_assets/tokenfit_4.webp", "/token_assets/tokenfit_5.webp", "/token_assets/tokenfit_6.webp"]
     },
-    "project_9" :
-    {
+    "project_9": {
       "name": "Teazit",
       "description": "Agencia de producción audiovisual y de eventos para empresas.",
       "liveLink": "https://teazit.com/",
-      "previewImage": "/Teazit.webp"
+      "previewImage": "/Teazit.webp",
+      "slug": "teazit",
+      "tags": ["Modificación de sitio web", "WordPress", "JavaScript", "Custom Post Type"],
+      "long_description": "Teazit crea formatos de video atractivos y experiencias innovadoras de eventos para responder a los desafíos de comunicación interna y externa de las empresas.",
+      "galery": ["/teazit_assets/teazit_1.webp", "/teazit_assets/teazit_2.webp"]
     },
-    "project_10" :
-    {
+    "project_10": {
       "name": "Gem",
       "description": "Centro de formación para tus formaciones alternas y formación continua.",
       "liveLink": "https://www.gem-formation.com/",
-      "previewImage": "/Gem.webp"
+      "previewImage": "/Gem.webp",
+      "slug": "gem",
+      "tags": ["Modificación de sitio web", "WordPress", "JavaScript", "Custom Post Type"],
+      "long_description": "GEM es un equipo motivado por el éxito de sus 'GEM'ers'. La empresa se enorgullece de apoyar a sus clientes a diario, desde las primeras conversaciones para definir el proyecto hasta el éxito en el mundo profesional, pasando por los altibajos del aprendizaje.",
+      "galery": ["/gem_assets/gem_1.webp", "/gem_assets/gem_2.webp"]
     },
-    "project_11" :
-    {
+    "project_11": {
       "name": "Portfolio 2023",
       "description": "Mi portafolio 2023.",
       "liveLink": "https://new-portfolio-one-pi.vercel.app/",
-      "previewImage": "/Portfolio_2023.webp"
-    }
-
+      "previewImage": "/Portfolio_2023.webp",
+      "slug": "portfolio-2023",
+      "tags": ["Creación de sitio web", "Plataforma multilingüe", "React", "NextJs", "JavaScript", "TailwindCSS"],
+      "long_description": "Portafolio personal del año 2023, que incluye proyectos que no figuran en la versión actual.",
+      "galery": ["/Portfolio_2023.webp"]
+    }  
   }
 }
