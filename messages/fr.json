@@ -115,7 +115,7 @@
     "liveLink": "https://bitcapitals.io/",
     "previewImage": "/Bitcapitals.webp",
     "slug": "bitcapitals",
-    "tags": ["Création site web", "Plateforme multilingue", "Wordpress", "Javascript", "API Rest", "SEO"],
+    "tags": ["Création site web", "Wordpress", "Javascript"],
     "long_description": "BitCapitals est une équipe d'experts avec plus de 10 ans d'expérience dans les solutions financières cryptographiques, visant à fournir aux entreprises, commerces et institutions les outils nécessaires pour stimuler le développement de leur activité et atteindre de nouveaux clients.",
     "galery": ["/bitCapitals_assets/bitcapital_1.webp", "/bitCapitals_assets/bitcapital_2.webp"]
   },
@@ -125,7 +125,7 @@
     "liveLink": "https://tokenfit.io/en/",
     "previewImage": "/Tokenfit.webp",
     "slug": "tokenfit",
-    "tags": ["Création site web", "Plateforme multilingue", "Wordpress"],
+    "tags": ["Création site web", "Plateforme multilingue", "Wordpress",  "Javascript"],
     "long_description": "Constituée de spécialistes en technologie financière et en sciences économiques, elle aide ses clients dans le développement de plateformes de tokenisation inclusives. Nous avons créé pour elle une identité visuelle originale et développé leur site web ainsi que deux plateformes de tokenisation (Tokenizer Online free et Blockchain for Real Estate).",
     "galery": ["/token_assets/tokenfit_1.webp", "/token_assets/tokenfit_2.webp", "/token_assets/tokenfit_3.webp", "/token_assets/tokenfit_4.webp", "/token_assets/tokenfit_5.webp", "/token_assets/tokenfit_6.webp"]
   },
