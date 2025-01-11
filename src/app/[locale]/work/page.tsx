@@ -3,9 +3,11 @@ import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ZoomIn } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import Transition from '@/components/transition';
+import { keys } from '@/lib/constants';
+
 import {
   Dialog,
   DialogContent,
@@ -30,19 +32,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function Work({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations('Workpage');
-  const keys = [
-    'project_1',
-    'project_2',
-    'project_3',
-    'project_4',
-    'project_5',
-    'project_6',
-    'project_7',
-    'project_8',
-    'project_9',
-    'project_10',
-    'project_11',
-  ] as const;
 
   return (
     <Transition>
@@ -83,15 +72,25 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                                   height={500}
                                   quality={100}
                                 />
+                                <div className='absolute z-50 bottom-0 flex justify-between w-[95%] md:w-[97%]'>
                                 <Link
                                   href={t(`${key}.liveLink`)}
                                   aria-label="Open website in a new window"
                                   target="_blank"
-                                  className="fixed z-50 bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                  className="text-sm md:text-base underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
                                 >
                                   <span>{t('link')}</span>
                                   <ExternalLink className="w-5 h-5" />
                                 </Link>
+                                <Link
+                                  href={`/${locale}/work/` + t(`${key}.slug`)}
+                                  aria-label="See details project"
+                                  className="text-sm md:text-base bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
+                                >
+                                  <span>{t('details')}</span>
+                                  <ZoomIn className="w-5 h-5" />
+                                </Link>
+                                </div>
                               </>
                             </CarouselItem>
                           );
@@ -113,12 +112,11 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                   <p className="h-16 flex items-end mt-1">{t(`${key}.description`)}</p>
                 </div>
                 <Link
-                  aria-label="Open website in a new window"
-                  href={t(`${key}.liveLink`)}
-                  target="_blank"
+                  aria-label="See details project"
+                  href={`/${locale}/work/` + t(`${key}.slug`)}
                   className="h-fit border-border dark:border-darkBorder dark:bg-darkBg dark:text-darkText shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-bg px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
                 >
-                  <ExternalLink />
+                  <ZoomIn />
                 </Link>
               </div>
             </div>

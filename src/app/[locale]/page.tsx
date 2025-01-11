@@ -41,7 +41,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   };
 
   return (
-    <div className="flex flex-col">
     <div className='fade-in flex items-center my-auto min-h-full'>
       <div className='md:w-1/2'>
         <h1 className="text-2xl font-heading sm:text-4xl">{t('title')}</h1>
@@ -66,8 +65,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <div className='hidden md:flex md:w-1/2 justify-center'>
         <Image src='/main.svg' alt="main image" width={400} height={400} />
       </div>
-    </div>
-    
-    </div>
+    </div> 
   );
 }
