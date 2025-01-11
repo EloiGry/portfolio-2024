@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
 import Image from 'next/image';
+
 import Links from '@/components/links';
 import { ContactForm } from "@/components/sections/contact-form";
 import { ContactForm as ContactType } from "@/types/contactForm";
@@ -8,8 +9,10 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 import { SiGmail } from "@icons-pack/react-simple-icons";
+import { CvBlock } from "@/components/sections/cv-block";
+
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'Homepage' });
@@ -51,15 +54,16 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           <p>{t('subdescription')}</p>
         </div>
         <div className="flex mt-20 gap-10 items-center">
-        <Dialog>
-          <DialogTrigger asChild>
-            <button><SiGmail/></button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px] bg-bg dark:bg-darkBg">
-            <ContactForm formData={formData}/>
-          </DialogContent>
-        </Dialog>
-        <Links />
+          <CvBlock/>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button><SiGmail/></button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px] bg-bg dark:bg-darkBg">
+              <ContactForm formData={formData}/>
+            </DialogContent>
+          </Dialog>
+          <Links />
         </div>
       </div>
       <div className='hidden md:flex md:w-1/2 justify-center'>
