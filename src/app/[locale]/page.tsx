@@ -10,7 +10,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { SiGmail } from "@icons-pack/react-simple-icons";
+import { Mail } from "lucide-react";
 import { CvBlock } from "@/components/sections/cv-block";
 
 
@@ -54,10 +54,10 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           <p>{t('subdescription')}</p>
         </div>
         <div className="flex mt-20 gap-10 items-center">
-          <CvBlock/>
+          <CvBlock href={t('cv')}/>
           <Dialog>
             <DialogTrigger asChild>
-              <button><SiGmail/></button>
+              <button><Mail/></button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px] bg-bg dark:bg-darkBg">
               <ContactForm formData={formData}/>

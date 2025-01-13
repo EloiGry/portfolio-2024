@@ -76,7 +76,7 @@ export default function Nav() {
               prefetch={true}
               key={link.path}
               className={clsx(
-                'relative rounded-base transition-colors pl-2 pr-1.5 py-1'
+                'relative rounded-base transition-colors pl-2 pr-1.5 py-1 z-10'
               )}
               href={`/${locale}${link.path}`}
               onClick={() => setActiveIndex(index)}
@@ -87,7 +87,7 @@ export default function Nav() {
         })}
         {/* Animated border */}
         <motion.div
-          className="absolute inset-0 border-2 my-2 border-border rounded-base"
+          className="absolute inset-0 border-2 my-2 border-border rounded-base "
           animate={borderPosition}
           transition={{ type: 'spring', stiffness: 300, damping: 30, duration: 0.3 }}
           style={{

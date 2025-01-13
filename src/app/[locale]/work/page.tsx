@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExternalLink, ZoomIn } from 'lucide-react';
+import { ExternalLink, Eye } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import Transition from '@/components/transition';
 import { keys } from '@/lib/constants';
@@ -88,7 +88,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                                   className="text-sm md:text-base bottom-0 underline text-white flex justify-center items-center gap-1 whitespace-nowrap"
                                 >
                                   <span>{t('details')}</span>
-                                  <ZoomIn className="w-5 h-5" />
+                                  <Eye className="w-5 h-5" />
                                 </Link>
                                 </div>
                               </>
@@ -116,7 +116,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
                   href={`/${locale}/work/` + t(`${key}.slug`)}
                   className="h-fit border-border dark:border-darkBorder dark:bg-darkBg dark:text-darkText shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-bg px-4 py-2 text-center text-sm font-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none sm:text-base dark:hover:shadow-none"
                 >
-                  <ZoomIn />
+                  <Eye />
                 </Link>
               </div>
             </div>

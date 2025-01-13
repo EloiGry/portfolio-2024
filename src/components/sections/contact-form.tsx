@@ -25,11 +25,20 @@ formData: ContactType;
 
 export function ContactForm({ formData }: ContactFormProps) {
     const schema: ZodType<Inputs> = z.object({
-        name: z.string().min(1, { message: formData.errors_name }),
+        name: z.string()
+          .trim()
+          .min(1, { message: formData.errors_object })
+          .refine((val) => val !== "", { message: formData.errors_object }),
         email: z.string().email({message: formData.errors_email}).min(1, { message: formData.errors_email }),
-        object: z.string().min(1, { message: formData.errors_object }),
-        message: z.string().min(1, { message: formData.errors_message }),
-    });
+        object: z.string()
+          .trim()
+          .min(1, { message: formData.errors_object })
+          .refine((val) => val !== "", { message: formData.errors_object }),
+        message: z.string()
+          .trim()
+          .min(1, { message: formData.errors_message })
+          .refine((val) => val !== "", { message: formData.errors_message }),
+      });
 
   const {
     formState: { errors, isSubmitSuccessful, isSubmitting },
