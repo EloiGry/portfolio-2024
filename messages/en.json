@@ -10,7 +10,23 @@
       "title": "Eloi Grychta",
       "subtitle": "Web Developer",
       "description": "I transform your concepts and carefully shape them to create personalized and innovative digital experiences. These experiences will captivate your audience and build their loyalty through a unique approach.",
-      "subdescription": "Feel free to contact me if you have a project in mind."
+      "subdescription": "Feel free to contact me if you have a project in mind.",
+      "cv": "/cv/CV_Grychta_Eloi_en.pdf"
+    },
+    "Contact": {
+      "title": "Contact Me",
+      "description": "Have an idea or a project? Send me a message, I’ll be happy to respond!",
+      "name": "Your name",
+      "email": "Your email address",
+      "object": "Subject of your message",
+      "message": "Your message",
+      "errors_name": "Please enter a valid name.",
+      "errors_email": "Please enter a valid email address.",
+      "errors_object": "Please enter a subject.",
+      "errors_message": "Please write a message.",
+      "global_error": "An error occurred. Please try again later.",
+      "submit": "Send",
+      "success_message": "Your message has been sent successfully!"
     },
     "Aboutpage": {
       "metadatatitle": "About",
@@ -31,77 +47,117 @@
       "metadatadescription": "Presentation page of my different works.",
       "title": "Work",
       "link": "Go to the website",
+      "details": "See details",
+      "otherWorks": "See other projects", 
       "project_1": {
         "name": "Pharmony",
         "description": "An innovative and high-performance pharmacy software.",
         "liveLink": "https://pharmony.fr/",
-        "previewImage": "/pharmony.webp"
+        "previewImage": "/pharmony.webp",
+        "slug": "pharmony",
+        "tags": ["Website Redesign", "Multilingual Platform", "WordPress", "Custom Post Type", "JavaScript", "SEO"],
+        "long_description": "To support the expansion of Pharmony (pharmacy management software) in France and the Netherlands, we developed a network of multilingual websites. After redesigning the original Belgian site, we created new national sites with country-specific content that complies with each country's regulations.",
+        "galery": ["/pharmo_assets/pharmony_1.webp", "/pharmo_assets/pharmony_2.webp", "/pharmo_assets/pharmony_3.webp", "/pharmo_assets/pharmony_4.webp"]
       },
       "project_2": {
         "name": "BGGD Portfolio",
         "description": "Portfolio of BGGD Design agency.",
         "liveLink": "https://bggd.fr/",
-        "previewImage": "/bggd.webp"
+        "previewImage": "/bggd.webp",
+        "slug": "bggd-portfolio",
+        "tags": ["Website Modification", "WordPress", "SEO"],
+        "long_description": "A global communication agency that enhances the identity of your project. We are a digital global communication agency specializing in brand identity creation and digital growth. Let’s develop the strategy together to turn your project into reality while adapting to your needs and budget.",
+        "galery": ["/bggd_assets/bggd1.webp", "/bggd_assets/bggd2.webp"]
       },
       "project_3": {
         "name": "Ieko",
         "description": "Sustainable programming technology for finance.",
         "liveLink": "https://ieko.io/",
-        "previewImage": "/ieko.webp"
+        "previewImage": "/ieko.webp",
+        "slug": "ieko",
+        "tags": ["Website Creation", "Multilingual Platform", "WordPress", "SEO"],
+        "long_description": "Ieko listens and understands your needs, fluently speaking the language of finance and technology. She provides solutions and knows how to balance urgency and quality thanks to her experience. Projects are planned in detail, leaving nothing to chance! They are completed on time and with premium quality. This is her commitment!",
+        "galery": ["/ieko_assets/ieko_1.webp", "/ieko_assets/ieko_2.webp", "/ieko_assets/ieko_3.webp", "/ieko_assets/ieko_4.webp", "/ieko_assets/ieko_5.webp"]
       },
       "project_4": {
         "name": "Tikitup",
         "description": "Event organization for Erasmus students in different cities in Spain.",
         "liveLink": "https://play.google.com/store/apps/details?id=com.oniria.tikitup",
-        "previewImage": "/Tikitup.webp"
+        "previewImage": "/Tikitup.webp",
+        "slug": "tikitup",
+        "tags": ["Website Modification", "React", "Next.js", "Typescript", "Bootstrap", "REST API"],
+        "long_description": "On Tikitup, you will see exclusive events of all kinds—stay alert so you don't miss anything! We will give visibility to great ideas derived from unique events.",
+        "galery": ["/tikitup_assets/tikitup_1.webp", "/tikitup_assets/tikitup_2.webp", "/tikitup_assets/tikitup_3.webp", "/tikitup_assets/tikitup_4.webp"]
       },
       "project_5": {
         "name": "Magellan Voyages",
         "description": "French tourism agency based in Argentina.",
         "liveLink": "https://www.magellan-voyages.com/",
-        "previewImage": "/magellan_main.webp"
+        "previewImage": "/magellan_main.webp",
+        "slug": "magellan-voyages",
+        "tags": ["Website Creation", "React", "Next.js", "Typescript", "TailwindCSS", "REST API", "Strapi", "SEO"],
+        "long_description": "At Magellan Voyage, the company is proud to be your specialist in authentic travels in Argentina. Its dedicated, passionate team creates unique experiences, offering you a deep immersion into the hidden treasures of this beautiful South American country. For years, they have shared their local expertise and love for this diverse land with travelers seeking personalized adventures, cultural discoveries, and unforgettable moments.",
+        "galery": ["/magellan_assets/mag1.webp", "/magellan_assets/mag2.webp", "/magellan_assets/mag3.webp", "/magellan_assets/mag4.webp"]
       },
-      "project_6" :
-      {
+      "project_6": {
         "name": "285 Kelvin",
         "description": "Blind wine tasting salon for individuals and professionals.",
         "liveLink": "https://285kelvin.com/",
-        "previewImage": "/285Kelvin.webp"
+        "previewImage": "/285Kelvin.webp",
+        "slug": "285-kelvin",
+        "tags": ["Website Creation", "Multilingual Platform", "WordPress", "JavaScript", "REST API", "SEO"],
+        "long_description": "285Kelvin reinvents the salon experience by organizing blind wine tastings, offering a direct and efficient platform for winegrowers. Their events are organized in selected venues across France, and soon internationally.",
+        "galery": ["/kelvin_assets/kelvin_1.webp", "/kelvin_assets/kelvin_2.webp", "/kelvin_assets/kelvin_3.webp", "/kelvin_assets/kelvin_4.webp", "/kelvin_assets/kelvin_5.webp", "/kelvin_assets/kelvin_6.webp"]
       },
-      "project_7" :
-      {
+      "project_7": {
         "name": "BitCapitals",
         "description": "Grow your business with a decentralized payment network in bitcoins.",
         "liveLink": "https://bitcapitals.io/",
-        "previewImage": "/Bitcapitals.webp"
+        "previewImage": "/Bitcapitals.webp",
+        "slug": "bitcapitals",
+        "tags": ["Website Creation", "WordPress", "JavaScript"],
+        "long_description": "BitCapitals is a team of experts with over 10 years of experience in cryptographic financial solutions, aiming to provide businesses, retailers, and institutions with the tools needed to boost their growth and reach new clients.",
+        "galery": ["/bitCapitals_assets/bitcapital_1.webp", "/bitCapitals_assets/bitcapital_2.webp"]
       },
-      "project_8" :
-      {
+      "project_8": {
         "name": "TokenFit",
         "description": "Startup dedicated to the development of projects using tokens.",
         "liveLink": "https://tokenfit.io/en/",
-        "previewImage": "/Tokenfit.webp"
+        "previewImage": "/Tokenfit.webp",
+        "slug": "tokenfit",
+        "tags": ["Website Creation", "Multilingual Platform", "WordPress", "JavaScript"],
+        "long_description": "Consisting of specialists in financial technology and economics, they assist clients in developing inclusive tokenization platforms. We created an original visual identity for them and developed their website, as well as two tokenization platforms (Tokenizer Online Free and Blockchain for Real Estate).",
+        "galery": ["/token_assets/tokenfit_1.webp", "/token_assets/tokenfit_2.webp", "/token_assets/tokenfit_3.webp", "/token_assets/tokenfit_4.webp", "/token_assets/tokenfit_5.webp", "/token_assets/tokenfit_6.webp"]
       },
-      "project_9" :
-      {
+      "project_9": {
         "name": "Teazit",
         "description": "Event production and audiovisual agency for companies.",
         "liveLink": "https://teazit.com/",
-        "previewImage": "/Teazit.webp"
+        "previewImage": "/Teazit.webp",
+        "slug": "teazit",
+        "tags": ["Website Modification", "WordPress", "JavaScript", "Custom Post Type"],
+        "long_description": "Teazit creates engaging video formats and innovative event experiences to meet internal and external communication challenges of businesses.",
+        "galery": ["/teazit_assets/teazit_1.webp", "/teazit_assets/teazit_2.webp"]
       },
-      "project_10" :
-      {
+      "project_10": {
         "name": "Gem",
         "description": "Training center for your alternating and continuing education courses.",
         "liveLink": "https://www.gem-formation.com/",
-        "previewImage": "/Gem.webp"
+        "previewImage": "/Gem.webp",
+        "slug": "gem",
+        "tags": ["Website Modification", "WordPress", "JavaScript", "Custom Post Type"],
+        "long_description": "GEM is a team motivated by the success of its 'GEM'ers'. The company is proud to support its clients every day, from the first discussions to outline the project to the success in the professional world, including the highs and lows of learning.",
+        "galery": ["/gem_assets/gem_1.webp", "/gem_assets/gem_2.webp"]
       },
-      "project_11" :
-      {
+      "project_11": {
         "name": "Portfolio 2023",
         "description": "My 2023 portfolio.",
         "liveLink": "https://new-portfolio-one-pi.vercel.app/",
-        "previewImage": "/Portfolio_2023.webp"
+        "previewImage": "/Portfolio_2023.webp",
+        "slug": "portfolio-2023",
+        "tags": ["Website Creation", "Multilingual Platform", "React", "NextJs", "JavaScript", "TailwindCSS"],
+        "long_description": "Personal portfolio for 2023, including projects not featured in the current version.",
+        "galery": ["/Portfolio_2023.webp"]
       }
     }  
 }

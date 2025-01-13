@@ -13,6 +13,8 @@ const montserrat = Montserrat({
   subsets: ['latin'],
 });
 
+
+
 type Props = {
   children: ReactNode;
   params: { locale: string };
@@ -33,7 +35,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
           <ThemeProvider attribute="class" disableTransitionOnChange>
             <Nav />
             <ClientWrapper> {/* Wrapper client pour le loader */}
-              <div className="text-text dark:text-darkText pb-10 pt-28 container flex min-h-screen">
+              <div className="text-text dark:text-darkText pb-10 container flex min-h-screen pt-28">
                 {children}
               </div>
             </ClientWrapper>

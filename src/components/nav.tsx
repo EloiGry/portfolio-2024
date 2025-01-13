@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import { ThemeSwitcher } from './theme-switcher';
 import LocaleSwitcher from './locale-switcher';
@@ -12,7 +12,6 @@ import { motion } from 'framer-motion';
 export default function Nav() {
   const locale = useLocale();
   const path = usePathname();
-  const router = useRouter();
   const t = useTranslations('Header');
   const [activeIndex, setActiveIndex] = useState(0);
   const [borderPosition, setBorderPosition] = useState({ left: 0, width: 0 });
@@ -37,9 +36,15 @@ export default function Nav() {
   };
 
   useEffect(() => {
-    const currentLinkIndex = links.findIndex(link => path === `/${locale}${link.path}`);
+    const currentLinkIndex = links.findIndex(link => {
+      if (link.path === '/work') {
+        return path.startsWith(`/${locale}${link.path}`);
+      }
+      return path === `/${locale}${link.path}`;
+    });
+  
     if (currentLinkIndex !== -1) {
-      setActiveIndex(currentLinkIndex);
+      setActiveIndex(currentLinkIndex); 
     }
   }, [path, locale]);
 
@@ -61,13 +66,9 @@ export default function Nav() {
     };
   }, [activeIndex]);
 
-  const changeLocale = (newLocale: 'en' | 'es' | 'fr') => {
-    const pathWithoutLocale = path.replace(`/${locale}`, '');
-    router.push(`/${newLocale}${pathWithoutLocale}`);
-  };
 
   return (
-    <div className="fixed left-0 top-5 z-50 w-full flex">
+      <div className="fixed left-0 top-5 z-50 w-full flex">
       <nav ref={navRef} className="relative text-text border-border dark:border-darkBorder shadow-light dark:shadow-dark mx-auto flex items-center w-max gap-2.5 sm:gap-5 rounded-base border-2 bg-main dark:bg-darkMain p-2.5 px-5 text-xs font-base sm:text-base w450:gap-4">
         {links.map((link, index) => {
           return (
@@ -75,7 +76,7 @@ export default function Nav() {
               prefetch={true}
               key={link.path}
               className={clsx(
-                'relative rounded-base transition-colors pl-2 pr-1.5 py-1'
+                'relative rounded-base transition-colors pl-2 pr-1.5 py-1 z-10'
               )}
               href={`/${locale}${link.path}`}
               onClick={() => setActiveIndex(index)}
@@ -86,7 +87,7 @@ export default function Nav() {
         })}
         {/* Animated border */}
         <motion.div
-          className="absolute inset-0 border-2 my-2 border-border rounded-base"
+          className="absolute inset-0 border-2 my-2 border-border rounded-base "
           animate={borderPosition}
           transition={{ type: 'spring', stiffness: 300, damping: 30, duration: 0.3 }}
           style={{

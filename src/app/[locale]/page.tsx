@@ -3,6 +3,16 @@ import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
 import Image from 'next/image';
 
 import Links from '@/components/links';
+import { ContactForm } from "@/components/sections/contact-form";
+import { ContactForm as ContactType } from "@/types/contactForm";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Mail } from "lucide-react";
+import { CvBlock } from "@/components/sections/cv-block";
+
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'Homepage' });
@@ -15,6 +25,23 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations('Homepage');
+  const t_bis = useTranslations('Contact')
+
+  const formData: ContactType = {
+    title: t_bis('title'),
+    description: t_bis('description'),
+    name: t_bis('name'),
+    email: t_bis('email'),
+    object: t_bis('object'),
+    message: t_bis('message'),
+    errors_name: t_bis('errors_name'),
+    errors_email: t_bis('errors_email'),
+    errors_object: t_bis('errors_object'),
+    errors_message: t_bis('errors_message'),
+    global_error: t_bis('global_error'),
+    submit: t_bis('submit'),
+    success_message: t_bis('success_message')
+  };
 
   return (
     <div className='fade-in flex items-center my-auto min-h-full'>
@@ -26,11 +53,22 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           <br />
           <p>{t('subdescription')}</p>
         </div>
-        <Links />
+        <div className="flex mt-20 gap-10 items-center">
+          <CvBlock href={t('cv')}/>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button><Mail/></button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px] bg-bg dark:bg-darkBg">
+              <ContactForm formData={formData}/>
+            </DialogContent>
+          </Dialog>
+          <Links />
+        </div>
       </div>
       <div className='hidden md:flex md:w-1/2 justify-center'>
         <Image src='/main.svg' alt="main image" width={400} height={400} />
       </div>
-    </div>
+    </div> 
   );
 }
