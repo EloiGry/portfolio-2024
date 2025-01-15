@@ -33,6 +33,7 @@ export default function Work({ params: { locale } }: { params: { locale: string 
   unstable_setRequestLocale(locale);
   const t = useTranslations('Workpage');
 
+
   return (
     <Transition>
       <h1 className="mb-8 text-2xl font-heading sm:text-4xl">{t('title')}</h1>
