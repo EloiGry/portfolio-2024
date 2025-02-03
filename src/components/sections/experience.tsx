@@ -1,10 +1,10 @@
-import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from 'next-intl'
+import { unstable_setRequestLocale } from 'next-intl/server'
 
 export default function Experience({ locale }: { locale: string }) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations('Aboutpage');
-  const keys = ['experience_1'] as const;
+  unstable_setRequestLocale(locale)
+  const t = useTranslations('Aboutpage')
+  const keys = ['experience_1'] as const
   return (
     <div className="mb-16">
       <h2 className="mb-8 text-xl font-heading sm:text-2xl">{t('xptitle')}</h2>

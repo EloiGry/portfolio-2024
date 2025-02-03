@@ -18,7 +18,6 @@ export default function Skills() {
             <h3 className="mb-4 text-lg font-heading sm:text-xl">
               {item.field}
             </h3>
-
             <div className="mb-10 flex flex-wrap gap-5">
               {item.skills.map((skill, id) => {
                 return (
